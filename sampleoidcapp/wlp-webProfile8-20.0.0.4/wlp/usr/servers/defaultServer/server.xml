@@ -1,0 +1,39 @@
+<server>
+    <featureManager>
+        <feature>jsp-2.3</feature>
+        <feature>jndi-1.0</feature>
+        <feature>localConnector-1.0</feature>
+	    <feature>openidConnectClient-1.0</feature>
+	    <feature>transportSecurity-1.0</feature>
+        <feature>appSecurity-2.0</feature>
+    </featureManager>
+
+    <logging consoleLogLevel="INFO" traceSpecification="*=info:com.ibm.ws.security.*=all"/>
+	
+    <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+	
+    <applicationManager autoExpand="true"/>
+    
+   
+    <sslDefault sslRef="DefaultSSLSettings" />
+    <ssl id="DefaultSSLSettings" keyStoreRef="myKeyStore" trustStoreRef="myTrustStore" />
+    <keyStore id="myKeyStore" password="Liberty" type="jks" location="${server.config.dir}/resources/security/BasicKeyStore.jks" />
+    <keyStore id="myTrustStore" password="Liberty" type="jks" location="${server.config.dir}/resources/security/BasicTrustStore.jks" />
+
+    <openidConnectClient id="c6022b66-b21e-46d3-a96a-1ec9475249d1"
+	    clientId="c6022b66-b21e-46d3-a96a-1ec9475249d1"
+ 	    clientSecret="FKf-@x4Jpg?S9[8n3gpJgR9bi0GlX@uC"
+        redirectToRPHostAndPort="https://webappname.azurewebsites.net/oidcclient/redirect/c6022b66-b21e-46d3-a96a-1ec9475249d1"
+	    discoveryEndpointUrl="https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration"/>
+
+    <applicationMonitor updateTrigger="mbean"/>
+    <webApplication id="testApp" location="${server.config.dir}apps/test.war" name="TestApp" type="war">
+        <application-bnd>
+            <security-role name="any-authenticated">
+                <special-subject type="ALL_AUTHENTICATED_USERS" />
+            </security-role>
+        </application-bnd>
+    </webApplication>
+
+    <!-- webApplication id="GiftCard" location="GiftCard.war" name="GiftCard"/ -->    
+</server>

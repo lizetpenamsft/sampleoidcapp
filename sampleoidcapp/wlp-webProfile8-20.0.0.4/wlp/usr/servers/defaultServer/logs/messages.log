@@ -1,0 +1,87 @@
+********************************************************************************
+product = WebSphere Application Server 20.0.0.4 (wlp-1.0.39.cl200420200401-1714)
+wlp.install.dir = /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/
+java.home = /usr/lib/jvm/java-8-openjdk-amd64/jre
+java.version = 1.8.0_252
+java.runtime = OpenJDK Runtime Environment (1.8.0_252-8u252-b09-1~16.04-b09)
+os = Linux (4.4.0-18362-Microsoft; amd64) (en_US)
+process = 8968@ernmarti-ms
+********************************************************************************
+[5/1/20 19:31:49:423 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[5/1/20 19:31:49:578 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/20.0.0.4/lafiles/en.html
+[5/1/20 19:31:54:635 BRT] 0000001a com.ibm.ws.logging.internal.TraceSpecification               I TRAS0018I: The trace state has been changed. The new trace state is *=info:com.ibm.ws.security.*=all.
+[5/1/20 19:31:55:006 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 8.38 seconds
+[5/1/20 19:31:55:241 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[5/1/20 19:32:00:645 BRT] 00000012 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[5/1/20 19:32:03:981 BRT] 00000015 com.ibm.ws.annocache.service                                 I OSGi Work Path [ /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/43/data ]
+[5/1/20 19:32:05:019 BRT] 00000016 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[5/1/20 19:32:07:337 BRT] 00000016 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[5/1/20 19:32:07:340 BRT] 00000016 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[5/1/20 19:32:07:342 BRT] 00000016 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[5/1/20 19:32:10:758 BRT] 0000001a com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0820A: The default keystore has been created using the 'keystore_password' environment variable.
+[5/1/20 19:32:11:241 BRT] 0000001a com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/resources/security/key.p12 of type: PKCS12
+[5/1/20 19:32:11:824 BRT] 00000020 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.327 seconds.
+[5/1/20 19:32:11:945 BRT] 00000012 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[5/1/20 19:32:14:867 BRT] 00000012 com.ibm.ws.security.wim.VMMService                           I CWIMK0009I: The user registry federation service is ready.
+[5/1/20 19:32:15:310 BRT] 00000012 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: The security service is ready.
+[5/1/20 19:32:16:630 BRT] 00000012 com.ibm.ws.security.oauth20.web.OAuth20EndpointServices      I CWWKS1410I: The OAuth endpoint service is activated.
+[5/1/20 19:32:17:200 BRT] 00000012 com.ibm.ws.security.jwt.internal.ConsumerImpl                I CWWKS6012I: The JSON Web Token (JWT) consumer service is available.
+[5/1/20 19:32:17:812 BRT] 00000012 com.ibm.ws.security.jwt.web.JwtEndpointServices              I CWWKS6002I: The JSON Web Token (JWT) endpoint service is available.
+[5/1/20 19:32:20:829 BRT] 00000023 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application TestApp.
+[5/1/20 19:32:21:651 BRT] 00000022 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: OpenID Connect Client Redirect Servlet.
+[5/1/20 19:32:21:672 BRT] 00000022 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module OpenID Connect Client Redirect Servlet has been bound to default_host.
+[5/1/20 19:32:21:675 BRT] 00000022 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/oidcclient/
+[5/1/20 19:32:21:713 BRT] 00000025 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.oauth.test.war.
+[5/1/20 19:32:21:714 BRT] 00000025 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.oauth.test.war has been bound to default_host.
+[5/1/20 19:32:21:726 BRT] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/oauth2/
+[5/1/20 19:32:21:833 BRT] 00000022 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[5/1/20 19:32:21:843 BRT] 00000022 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/oidcclient
+[5/1/20 19:32:21:874 BRT] 0000001f com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/oauth2
+[5/1/20 19:32:21:948 BRT] 00000022 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[5/1/20 19:32:22:003 BRT] 0000001f com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[5/1/20 19:32:22:092 BRT] 00000020 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.ws.security.jwt.
+[5/1/20 19:32:22:093 BRT] 00000020 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.ws.security.jwt has been bound to default_host.
+[5/1/20 19:32:22:093 BRT] 00000020 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/jwt/
+[5/1/20 19:32:22:143 BRT] 00000023 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Websphere Liberty JAAS OIDC example.
+[5/1/20 19:32:22:169 BRT] 00000023 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Websphere Liberty JAAS OIDC example has been bound to default_host.
+[5/1/20 19:32:22:169 BRT] 00000023 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/TestApp/
+[5/1/20 19:32:22:190 BRT] 00000023 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application TestApp started in 1.362 seconds.
+[5/1/20 19:32:22:199 BRT] 0000001f com.ibm.ws.jsp                                               I JSPG8502I: The value of the JSP attribute jdkSourceLevel is "15".
+[5/1/20 19:32:22:276 BRT] 00000020 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jwt
+[5/1/20 19:32:22:276 BRT] 00000020 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[5/1/20 19:32:22:304 BRT] 0000001e com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[5/1/20 19:32:22:308 BRT] 0000001e com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host *  (IPv6) port 9443.
+[5/1/20 19:32:22:313 BRT] 00000022 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[5/1/20 19:32:22:386 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appSecurity-2.0, distributedMap-1.0, el-3.0, federatedRegistry-1.0, jndi-1.0, json-1.0, jsp-2.3, ldapRegistry-3.0, localConnector-1.0, oauth-2.0, openidConnectClient-1.0, servlet-3.1, ssl-1.0, transportSecurity-1.0].
+[5/1/20 19:32:22:387 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 27.376 seconds.
+[5/1/20 19:32:22:387 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 35.765 seconds.
+[5/1/20 19:32:22:504 BRT] 00000022 com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9122I:  For URL /redirect/* in application com.ibm.ws.security.openidconnect.client, the following HTTP methods are uncovered, and accessible: GET POST PUT DELETE HEAD OPTIONS TRACE 
+[5/1/20 19:32:22:682 BRT] 0000001f com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9122I:  For URL /login.jsp in application com.ibm.ws.security.oauth.2.0, the following HTTP methods are uncovered, and accessible: PUT DELETE HEAD OPTIONS TRACE 
+[5/1/20 19:32:22:683 BRT] 0000001f com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9122I:  For URL /declarativeEndpoint/* in application com.ibm.ws.security.oauth.2.0, the following HTTP methods are uncovered, and accessible: PUT DELETE HEAD OPTIONS TRACE 
+[5/1/20 19:32:22:683 BRT] 0000001f com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9122I:  For URL /clientMetatype in application com.ibm.ws.security.oauth.2.0, the following HTTP methods are uncovered, and accessible: POST PUT DELETE HEAD OPTIONS TRACE 
+[5/1/20 19:32:22:710 BRT] 00000036 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/TestApp
+[5/1/20 19:32:22:711 BRT] 00000036 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[5/1/20 19:32:22:868 BRT] 00000036 com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9122I:  For URL /* in application TestApp, the following HTTP methods are uncovered, and accessible: PUT DELETE HEAD OPTIONS TRACE 
+[5/1/20 19:32:27:079 BRT] 00000025 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[5/1/20 19:33:00:803 BRT] 00000021 .security.openidconnect.client.internal.OidcClientConfigImpl I CWWKS1523I: The OpenId Connect client (Relying Party or RP) [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration specifies [HS256], a default value for the [signatureAlgorithm] and as a result of discovery this is changed to [RS256].
+[5/1/20 19:33:00:939 BRT] 00000021 .security.openidconnect.client.internal.OidcClientConfigImpl I CWWKS1526I: The OpenID Connect client [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration has been established with the information from the discovery endpoint URL [https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration]. This information enables the client to interact with the OpenID Connect provider to process the requests such as authorization and token.
+[5/1/20 19:33:00:955 BRT] 00000021 .security.openidconnect.client.internal.OidcClientConfigImpl I CWWKS1700I: OpenID Connect client c6022b66-b21e-46d3-a96a-1ec9475249d1 configuration successfully processed.
+[5/1/20 19:40:19:100 BRT] 000000f2 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0016I: Starting server configuration update.
+[5/1/20 19:40:24:544 BRT] 0000012e .security.openidconnect.client.internal.OidcClientConfigImpl I CWWKS1528I: The OpenID Connect client [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration is consistent with the information from the discovery endpoint URL [https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration], so no configuration updates are needed.
+[5/1/20 19:40:24:551 BRT] 0000012e .security.openidconnect.client.internal.OidcClientConfigImpl I CWWKS1526I: The OpenID Connect client [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration has been established with the information from the discovery endpoint URL [https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration]. This information enables the client to interact with the OpenID Connect provider to process the requests such as authorization and token.
+[5/1/20 19:40:24:556 BRT] 0000012e .security.openidconnect.client.internal.OidcClientConfigImpl I CWWKS1701I: OpenID Connect client c6022b66-b21e-46d3-a96a-1ec9475249d1 configuration change successfully processed.
+[5/1/20 19:40:24:566 BRT] 000000f2 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0017I: The server configuration was successfully updated in 5.469 seconds.
+[5/1/20 20:05:08:973 BRT] 0000000f com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: The server defaultServer is stopping because the JVM is exiting.
+[5/1/20 20:05:08:978 BRT] 000004d1 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[5/1/20 20:05:09:194 BRT] 00000419 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host *  (IPv6) port 9443.
+[5/1/20 20:05:09:197 BRT] 00000419 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host *  (IPv6) port 9080.
+[5/1/20 20:05:09:198 BRT] 00000419 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/oidcclient/
+[5/1/20 20:05:09:198 BRT] 00000419 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/jwt/
+[5/1/20 20:05:09:198 BRT] 00000419 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/TestApp/
+[5/1/20 20:05:09:198 BRT] 00000419 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/oauth2/
+[5/1/20 20:05:10:201 BRT] 000004d1 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[5/1/20 20:05:10:233 BRT] 000004cc com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application TestApp has stopped successfully.
+[5/1/20 20:05:10:760 BRT] 000004d1 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[5/1/20 20:05:10:925 BRT] 000004d1 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[5/1/20 20:05:14:169 BRT] 000004d1 com.ibm.ws.security.wim.VMMService                           I CWIMK0010I: The user registry federation service is stopped.
+[5/1/20 20:05:17:880 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 33 minutes, 31.246 seconds.

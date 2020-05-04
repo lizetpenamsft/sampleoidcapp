@@ -1,0 +1,78 @@
+Launching defaultServer (WebSphere Application Server 20.0.0.4/wlp-1.0.39.cl200420200401-1714) on OpenJDK 64-Bit Server VM, version 1.8.0_252-8u252-b09-1~16.04-b09 (en_US)
+[AUDIT   ] CWWKE0001I: The server defaultServer has been launched.
+[AUDIT   ] CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/20.0.0.4/lafiles/en.html
+[INFO    ] CWWKE0002I: The kernel started after 8.38 seconds
+[INFO    ] CWWKF0007I: Feature update started.
+[INFO    ] CWWKS0007I: The security service is starting...
+[INFO    ] OSGi Work Path [ /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/43/data ]
+[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+[INFO    ] DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[INFO    ] DYNA1071I: The cache provider default is being used.
+[INFO    ] DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[AUDIT   ] CWPKI0820A: The default keystore has been created using the 'keystore_password' environment variable.
+[INFO    ] Successfully loaded default keystore: /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/resources/security/key.p12 of type: PKCS12
+[INFO    ] CWWKS4105I: LTPA configuration is ready after 0.327 seconds.
+[INFO    ] CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[INFO    ] CWIMK0009I: The user registry federation service is ready.
+[INFO    ] CWWKS0008I: The security service is ready.
+[INFO    ] CWWKS1410I: The OAuth endpoint service is activated.
+[INFO    ] CWWKS6012I: The JSON Web Token (JWT) consumer service is available.
+[INFO    ] CWWKS6002I: The JSON Web Token (JWT) endpoint service is available.
+[INFO    ] CWWKZ0018I: Starting application TestApp.
+[INFO    ] SRVE0169I: Loading Web Module: OpenID Connect Client Redirect Servlet.
+[INFO    ] SRVE0250I: Web Module OpenID Connect Client Redirect Servlet has been bound to default_host.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/oidcclient/
+[INFO    ] SRVE0169I: Loading Web Module: com.ibm.oauth.test.war.
+[INFO    ] SRVE0250I: Web Module com.ibm.oauth.test.war has been bound to default_host.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/oauth2/
+[INFO    ] SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/oidcclient
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/oauth2
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] SRVE0169I: Loading Web Module: com.ibm.ws.security.jwt.
+[INFO    ] SRVE0250I: Web Module com.ibm.ws.security.jwt has been bound to default_host.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/jwt/
+[INFO    ] SRVE0169I: Loading Web Module: Websphere Liberty JAAS OIDC example.
+[INFO    ] SRVE0250I: Web Module Websphere Liberty JAAS OIDC example has been bound to default_host.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://100.64.163.96:9080/TestApp/
+[AUDIT   ] CWWKZ0001I: Application TestApp started in 1.362 seconds.
+[INFO    ] JSPG8502I: The value of the JSP attribute jdkSourceLevel is "15".
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/jwt
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[INFO    ] CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host *  (IPv6) port 9443.
+[INFO    ] DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[AUDIT   ] CWWKF0012I: The server installed the following features: [appSecurity-2.0, distributedMap-1.0, el-3.0, federatedRegistry-1.0, jndi-1.0, json-1.0, jsp-2.3, ldapRegistry-3.0, localConnector-1.0, oauth-2.0, openidConnectClient-1.0, servlet-3.1, ssl-1.0, transportSecurity-1.0].
+[INFO    ] CWWKF0008I: Feature update completed in 27.376 seconds.
+[AUDIT   ] CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 35.765 seconds.
+[INFO    ] CWWKS9122I:  For URL /redirect/* in application com.ibm.ws.security.openidconnect.client, the following HTTP methods are uncovered, and accessible: GET POST PUT DELETE HEAD OPTIONS TRACE 
+[INFO    ] CWWKS9122I:  For URL /login.jsp in application com.ibm.ws.security.oauth.2.0, the following HTTP methods are uncovered, and accessible: PUT DELETE HEAD OPTIONS TRACE 
+[INFO    ] CWWKS9122I:  For URL /declarativeEndpoint/* in application com.ibm.ws.security.oauth.2.0, the following HTTP methods are uncovered, and accessible: PUT DELETE HEAD OPTIONS TRACE 
+[INFO    ] CWWKS9122I:  For URL /clientMetatype in application com.ibm.ws.security.oauth.2.0, the following HTTP methods are uncovered, and accessible: POST PUT DELETE HEAD OPTIONS TRACE 
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/TestApp
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] CWWKS9122I:  For URL /* in application TestApp, the following HTTP methods are uncovered, and accessible: PUT DELETE HEAD OPTIONS TRACE 
+[INFO    ] SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[INFO    ] CWWKS1523I: The OpenId Connect client (Relying Party or RP) [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration specifies [HS256], a default value for the [signatureAlgorithm] and as a result of discovery this is changed to [RS256].
+[INFO    ] CWWKS1526I: The OpenID Connect client [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration has been established with the information from the discovery endpoint URL [https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration]. This information enables the client to interact with the OpenID Connect provider to process the requests such as authorization and token.
+[INFO    ] CWWKS1700I: OpenID Connect client c6022b66-b21e-46d3-a96a-1ec9475249d1 configuration successfully processed.
+[AUDIT   ] CWWKG0016I: Starting server configuration update.
+[INFO    ] CWWKS1528I: The OpenID Connect client [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration is consistent with the information from the discovery endpoint URL [https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration], so no configuration updates are needed.
+[INFO    ] CWWKS1526I: The OpenID Connect client [c6022b66-b21e-46d3-a96a-1ec9475249d1] configuration has been established with the information from the discovery endpoint URL [https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration]. This information enables the client to interact with the OpenID Connect provider to process the requests such as authorization and token.
+[INFO    ] CWWKS1701I: OpenID Connect client c6022b66-b21e-46d3-a96a-1ec9475249d1 configuration change successfully processed.
+[AUDIT   ] CWWKG0017I: The server configuration was successfully updated in 5.469 seconds.
+[AUDIT   ] CWWKE0085I: The server defaultServer is stopping because the JVM is exiting.
+[AUDIT   ] CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[INFO    ] CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host *  (IPv6) port 9443.
+[INFO    ] CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host *  (IPv6) port 9080.
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/oidcclient/
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/jwt/
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/TestApp/
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://100.64.163.96:9080/oauth2/
+[INFO    ] CWWKE1101I: Server quiesce complete.
+[AUDIT   ] CWWKZ0009I: The application TestApp has stopped successfully.
+[INFO    ] CWWKS0009I: The security service has stopped.
+[INFO    ] CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[INFO    ] CWIMK0010I: The user registry federation service is stopped.
+[AUDIT   ] CWWKE0036I: The server defaultServer stopped after 33 minutes, 31.246 seconds.

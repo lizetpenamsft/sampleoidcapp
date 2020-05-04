@@ -1,0 +1,194 @@
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:01 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:01 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:02 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:03 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:03 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:03 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:03 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:03 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:03 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:03 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:05 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:05 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:06 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:07 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:07 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:08 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:08 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:08 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:09 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:09 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:09 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:09 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:10 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:10 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:10 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:10 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:10 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:10 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:11 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:11 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:12 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:12 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:12 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:12 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:13 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:13 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:13 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:13 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:13 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:13 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:13 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:14 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:15 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:16 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:17 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:18 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:18 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:19 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:20 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:21 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:23 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:24 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:24 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:25 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:26 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:26 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:27 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:28 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:29 java
+[ps, -p, 8968]
+  PID TTY          TIME CMD
+ 8968 tty5     00:00:30 java
+
+arg0=defaultServer
+arg1=--pid=8968
+arg2=--status:start
+exit=22
+
+                   Command:  java 
+                 Java home:  /usr/lib/jvm/java-8-openjdk-amd64/jre
+              Install root:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/
+          System libraries:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/lib/
+                 User root:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/
+                    Config:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/
+                    Output:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/
+

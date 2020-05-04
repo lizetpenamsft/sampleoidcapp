@@ -1,0 +1,27 @@
+OLGH4040 Make RC consistent for starting liberty as a Windows Service
+OLGH4873 Allow CXF-specific client properties for the JAX-RS 2.X Client APIs
+OLGH9692 Non english characters in logoutRedirectUrl of oauthProvider results in incorrect redirection
+PH19692 CORRUPT ZIP FILE DOWNLOADS VIA API DISCOVERY FEATURE
+PH22079 Vulnerability in Apache CXF affects WebSphere Application Server Liberty (CVE-2019-17573)
+PH22080 Cross-site scripting vulnerability in samlWeb-2.0 (CVE-2020-4303, CVE-2020-4304)
+PH22112 DISPLAY WORK WITH ZOSREQUESTLOGGING FEATURE DOESN'T COUNT SERVLET REQUESTS
+PH23233 NULLPOINTEREXCEPTION WHEN INSTALLING THE REQUIRED WLP SERVER'S FEATURES FROM LOCAL REPOSITORY
+PH23517 ZOSCONSOLECOMMANDDISPLAYWORK-1.0 AS AN AUTO-FEATURE IS NOT INSTALLED
+PH23757 EJB PERSISTENT TIMER/DESERIALIZED CONTEXT FAILS WITH CWWKC1004E (UNAVAILABLE CONTEXT) AFTER MPCONTEXTPROPAGATION-1.0 DISABLED
+PH23817 GPF IN LIBERTY SERVER DURING SHUTDOWN
+OLGH8933 Authentication cache fails to find existing Subjects, slowing performance.
+OLGH9986 Application fails to start because of java.lang.IllegalStateException: Configuration pid com.ibm.ws.app.manager_23 was deleted.
+OLGH10707 Thread safety problem in JSON logging field name mapping code
+OLGH10986 invalid json data passed to @Path resource method(@Valid MyPojo) yields H500 instead of H400
+OLGH11043 java.security.AccessControlException: Access denied ('java.util.PropertyPermission' 'org.osgi.framework.bootdelegation' 'read')
+OLGH11044 custom-login-configuration not honored in java:comp/env bindings without binding-name
+OLGH11108 mpRestClient-1.3 ignoring hostnameVerifier configuration
+OLGH11199 EJB Persistent Timer/deserialized context fails with unavailable mp.cleared.context.provider after mpContextPropagation-1.0 disabled
+OLGH11289 ConcurrentModificationException during JSF application startup
+OLGH11445 The JarFileClassLoader throws an IllegalArgumentException when defining package com.ibm.websphere.ras.annotation
+OLGH11454 Remove lock contention and other perf improvements for starting multiple applications
+OLGH11478 Minor code issue in LdapHelper.getRDN in com.ibm.ws.security.wim.adapter.ldap
+OLGH11510 Timing window where server loses the ability to run a persistent timer if config update to disable execution overlaps a poll
+OLGH11534 Async implementation of MP rest client returns CompletionStage of Collection of HashMap but expected CompletionStage of Collection of a user defined type
+OLGH11535 AdapterUtil.createXAException utility method garbles message parameters
+OLGH11543 PH22080

@@ -1,0 +1,16 @@
+------Start of DE processing------ = [5/1/20 18:33:15:826 BRT]
+Exception = com.ibm.ws.kernel.boot.LaunchException
+Source = com.ibm.ws.kernel.launch.internal.LauncherDelegateImpl
+probeid = 101
+Stack Dump = com.ibm.ws.kernel.boot.LaunchException: Exceptions occurred while installing platform bundles
+	at com.ibm.ws.kernel.launch.internal.ProvisionerImpl.checkInstallStatus(ProvisionerImpl.java:122)
+	at com.ibm.ws.kernel.launch.internal.ProvisionerImpl.initialProvisioning(ProvisionerImpl.java:87)
+	at com.ibm.ws.kernel.launch.internal.FrameworkManager.innerLaunchFramework(FrameworkManager.java:455)
+	at com.ibm.ws.kernel.launch.internal.FrameworkManager.launchFramework(FrameworkManager.java:284)
+	at com.ibm.ws.kernel.launch.internal.LauncherDelegateImpl.doFrameworkLaunch(LauncherDelegateImpl.java:114)
+	at com.ibm.ws.kernel.launch.internal.LauncherDelegateImpl.launchFramework(LauncherDelegateImpl.java:100)
+	at com.ibm.ws.kernel.boot.internal.KernelBootstrap.go(KernelBootstrap.java:213)
+	at com.ibm.ws.kernel.boot.Launcher.handleActions(Launcher.java:241)
+	at com.ibm.ws.kernel.boot.Launcher.createPlatform(Launcher.java:117)
+	at com.ibm.ws.kernel.boot.cmdline.EnvCheck.main(EnvCheck.java:59)
+	at com.ibm.ws.kernel.boot.cmdline.EnvCheck.main(EnvCheck.java:35)

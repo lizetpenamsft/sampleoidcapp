@@ -1,0 +1,13 @@
+
+arg0=defaultServer
+arg1=--pid=
+arg2=--stop
+exit=1
+
+                 Java home:  /usr/lib/jvm/java-8-openjdk-amd64/jre
+              Install root:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/
+          System libraries:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/lib/
+                 User root:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/
+                    Config:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/
+                    Output:  /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/
+

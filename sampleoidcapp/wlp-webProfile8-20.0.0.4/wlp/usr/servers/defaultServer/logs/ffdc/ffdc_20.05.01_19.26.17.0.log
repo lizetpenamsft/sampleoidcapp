@@ -1,0 +1,728 @@
+------Start of DE processing------ = [5/1/20 19:26:17:335 BRT]
+Exception = javax.net.ssl.SSLException
+Source = com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl
+probeid = 1019
+Stack Dump = javax.net.ssl.SSLException: java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:214)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1967)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1924)
+	at sun.security.ssl.SSLSocketImpl.handleException(SSLSocketImpl.java:1907)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1423)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1400)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl.getHTTPRequestAsString(OidcClientConfigImpl.java:1018)
+	at com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl.handleDiscoveryEndpoint(OidcClientConfigImpl.java:867)
+	at com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl.processConfigProps(OidcClientConfigImpl.java:429)
+	at com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl.activate(OidcClientConfigImpl.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:318)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:308)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:342)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:115)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:957)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:902)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:216)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:213)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:530)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:494)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:685)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getService(DependencyManager.java:1505)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getService(DependencyManager.java:1479)
+	at org.apache.felix.scr.impl.manager.ComponentContextImpl.locateService(ComponentContextImpl.java:171)
+	at com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceElement.getService(ConcurrentServiceReferenceElement.java:72)
+	at com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceMap$ValueIterator.hasNext(ConcurrentServiceReferenceMap.java:327)
+	at com.ibm.ws.security.openidconnect.client.internal.OidcClientImpl.initOidcClientConfigs(OidcClientImpl.java:836)
+	at com.ibm.ws.security.openidconnect.client.internal.OidcClientImpl.anyClientIsBeforeSso(OidcClientImpl.java:815)
+	at com.ibm.ws.webcontainer.security.WebProviderAuthenticatorProxy.handleOidcClient(WebProviderAuthenticatorProxy.java:589)
+	at com.ibm.ws.webcontainer.security.WebProviderAuthenticatorProxy.authenticate(WebProviderAuthenticatorProxy.java:457)
+	at com.ibm.ws.webcontainer.security.WebAuthenticatorProxy.authenticate(WebAuthenticatorProxy.java:68)
+	at com.ibm.ws.webcontainer.security.WebAppSecurityCollaboratorImpl.authenticateRequest(WebAppSecurityCollaboratorImpl.java:1211)
+	at com.ibm.ws.webcontainer.security.WebAppSecurityCollaboratorImpl.determineWebReply(WebAppSecurityCollaboratorImpl.java:967)
+	at com.ibm.ws.webcontainer.security.WebAppSecurityCollaboratorImpl.performSecurityChecks(WebAppSecurityCollaboratorImpl.java:656)
+	at com.ibm.ws.webcontainer.security.WebAppSecurityCollaboratorImpl.preInvoke(WebAppSecurityCollaboratorImpl.java:574)
+	at com.ibm.wsspi.webcontainer.collaborator.CollaboratorHelper.preInvokeCollaborators(CollaboratorHelper.java:459)
+	at com.ibm.ws.webcontainer.osgi.collaborator.CollaboratorHelperImpl.preInvokeCollaborators(CollaboratorHelperImpl.java:270)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1114)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5021)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:551)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:484)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:346)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:317)
+	at com.ibm.ws.channel.ssl.internal.SSLConnectionLink.determineNextChannel(SSLConnectionLink.java:1077)
+	at com.ibm.ws.channel.ssl.internal.SSLConnectionLink.readyInboundPostHandshake(SSLConnectionLink.java:738)
+	at com.ibm.ws.channel.ssl.internal.SSLConnectionLink$MyHandshakeCompletedCallback.complete(SSLConnectionLink.java:414)
+	at com.ibm.ws.channel.ssl.internal.SSLUtils.handleHandshake(SSLUtils.java:950)
+	at com.ibm.ws.channel.ssl.internal.SSLHandshakeIOCallback.complete(SSLHandshakeIOCallback.java:85)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+	at sun.security.validator.PKIXValidator.<init>(PKIXValidator.java:104)
+	at sun.security.validator.Validator.getInstance(Validator.java:181)
+	at sun.security.ssl.X509TrustManagerImpl.getValidator(X509TrustManagerImpl.java:318)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrustedInit(X509TrustManagerImpl.java:179)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:193)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at com.ibm.ws.ssl.core.WSX509TrustManager.checkServerTrusted(WSX509TrustManager.java:722)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1670)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:226)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1082)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:1010)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1079)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1388)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1416)
+	... 83 more
+Caused by: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+	at java.security.cert.PKIXParameters.setTrustAnchors(PKIXParameters.java:200)
+	at java.security.cert.PKIXParameters.<init>(PKIXParameters.java:120)
+	at java.security.cert.PKIXBuilderParameters.<init>(PKIXBuilderParameters.java:104)
+	at sun.security.validator.PKIXValidator.<init>(PKIXValidator.java:102)
+	... 96 more
+
+Dump of callerThis
+Object type = com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl
+  tc = class com.ibm.websphere.ras.TraceComponent@39ba3248
+    strings[0] = "TraceComponent[com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl,class com.ibm.ws.security.openidconnect.client.internal.OidcClientConfigImpl,[OpenIdConnect],com.ibm.ws.security.openidconnect.client.internal.resources.OidcClientMessages,null]"
+  KEY_SSL_SUPPORT = "sslSupport"
+  sslSupportRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@6c8c6903
+    referenceName = "sslSupport"
+    tuple = class java.util.concurrent.atomic.AtomicReference@2ac1e528
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@13b9ae2
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@4ea2ebea
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@e68c36d
+  CFG_KEY_ID = "id"
+  CFG_KEY_GRANT_TYPE = "grantType"
+  CFG_KEY_RESPONSE_TYPE = "responseType"
+  CFG_KEY_SCOPE = "scope"
+  CFG_KEY_CLIENT_ID = "clientId"
+  CFG_KEY_CLIENT_SECRET = "clientSecret"
+  CFG_KEY_REDIRECT_TO_RP_HOST_AND_PORT = "redirectToRPHostAndPort"
+  CFG_KEY_USER_IDENTIFIER = "userIdentifier"
+  CFG_KEY_GROUP_IDENTIFIER = "groupIdentifier"
+  CFG_KEY_REALM_IDENTIFIER = "realmIdentifier"
+  CFG_KEY_REALM_NAME = "realmName"
+  CFG_KEY_UNIQUE_USER_IDENTIFIER = "uniqueUserIdentifier"
+  CFG_KEY_TOKEN_ENDPOINT_AUTH_METHOD = "tokenEndpointAuthMethod"
+  CFG_KEY_USER_IDENTITY_TO_CREATE_SUBJECT = "userIdentityToCreateSubject"
+  CFG_KEY_MAP_IDENTITY_TO_REGISTRY_USER = "mapIdentityToRegistryUser"
+  CFG_KEY_OidcclientRequestParameterSupported = "oidcclientRequestParameterSupported"
+  CFG_KEY_VALIDATE_ACCESS_TOKEN_LOCALLY = "validateAccessTokenLocally"
+  CFG_KEY_SHARED_KEY = "sharedKey"
+  CFG_KEY_TRUST_ALIAS_NAME = "trustAliasName"
+  CFG_KEY_HTTPS_REQUIRED = "httpsRequired"
+  CFG_KEY_CLIENTSIDE_REDIRECT = "isClientSideRedirectSupported"
+  CFG_KEY_disableLtpaCookie = "disableLtpaCookie"
+  CFG_KEY_NONCE_ENABLED = "nonceEnabled"
+  CFG_KEY_SSL_REF = "sslRef"
+  CFG_KEY_SIGNATURE_ALGORITHM = "signatureAlgorithm"
+  CFG_KEY_CLOCK_SKEW = "clockSkew"
+  CFG_KEY_AUTHENTICATION_TIME_LIMIT = "authenticationTimeLimit"
+  CFG_KEY_DISCOVERY_ENDPOINT_URL = "discoveryEndpointUrl"
+  CFG_KEY_AUTHORIZATION_ENDPOINT_URL = "authorizationEndpointUrl"
+  CFG_KEY_TOKEN_ENDPOINT_URL = "tokenEndpointUrl"
+  CFG_KEY_USERINFO_ENDPOINT_URL = "userInfoEndpointUrl"
+  CFG_KEY_VALIDATION_ENDPOINT_URL = "validationEndpointUrl"
+  CFG_KEY_DISABLE_ISS_CHECKING = "disableIssChecking"
+  CFG_KEY_INITIAL_STATE_CACHE_CAPACITY = "initialStateCacheCapacity"
+  CFG_KEY_AUTO_AUTHORIZE_PARAM = "autoAuthorizeParam"
+  CFG_KEY_ISSUER_IDENTIFIER = "issuerIdentifier"
+  CFG_KEY_TRUSTSTORE_REF = "trustStoreRef"
+  CFG_KEY_HOST_NAME_VERIFICATION_ENABLED = "hostNameVerificationEnabled"
+  CFG_KEY_INCLUDE_ID_TOKEN_IN_SUBJECT = "includeIdTokenInSubject"
+  CFG_KEY_INCLUDE_CUSTOM_CACHE_KEY_IN_SUBJECT = "includeCustomCacheKeyInSubject"
+  CFG_KEY_AUTH_CONTEXT_CLASS_REFERENCE = "authContextClassReference"
+  CFG_KEY_AUTH_FILTER_REF = "authFilterRef"
+  CFG_KEY_JSON_WEB_KEY = "jsonWebKey"
+  CFG_KEY_JWK_ENDPOINT_URL = "jwkEndpointUrl"
+  CFG_KEY_JWK_CLIENT_ID = "jwkClientId"
+  CFG_KEY_JWK_CLIENT_SECRET = "jwkClientSecret"
+  CFG_KEY_PROMPT = "prompt"
+  CFG_KEY_AUDIENCES = "audiences"
+  CFG_KEY_RESOURCES = "resource"
+  CFG_KEY_CREATE_SESSION = "createSession"
+  CFG_KEY_INBOUND_PROPAGATION = "inboundPropagation"
+  CFG_KEY_VALIDATION_METHOD = "validationMethod"
+  CFG_KEY_HEADER_NAME = "headerName"
+  CFG_KEY_propagation_authnSessionDisabled = "authnSessionDisabled"
+  CFG_KEY_reAuthnOnAccessTokenExpire = "reAuthnOnAccessTokenExpire"
+  CFG_KEY_reAuthnCushionMilliseconds = "reAuthnCushion"
+  CFG_KEY_jwt = "jwt"
+  CFG_KEY_jwtRef = "builder"
+  CFG_KEY_jwtClaims = "claims"
+  CFG_KEY_AUTHZ_PARAM = "authzParameter"
+  CFG_KEY_TOKEN_PARAM = "tokenParameter"
+  CFG_KEY_USERINFO_PARAM = "userinfoParameter"
+  CFG_KEY_JWK_PARAM = "jwkParameter"
+  CFG_KEY_PARAM_NAME = "name"
+  CFG_KEY_PARAM_VALUE = "value"
+  CFG_KEY_JUNCTION_PATH = "redirectJunctionPath"
+  CFG_KEY_accessTokenInLtpaCookie = "accessTokenInLtpaCookie"
+  CFG_KEY_USE_ACCESS_TOKEN_AS_ID_TOKEN = "useAccessTokenAsIdToken"
+  CFG_KEY_USERINFO_ENDPOINT_ENABLED = "userInfoEndpointEnabled"
+  CFG_KEY_DISCOVERY_POLLING_RATE = "discoveryPollingRate"
+  CFG_KEY_USE_SYSPROPS_FOR_HTTPCLIENT_CONNECTONS = "useSystemPropertiesForHttpClientConnections"
+  CFG_KEY_FORWARD_LOGIN_PARAMETER = "forwardLoginParameter"
+  OPDISCOVERY_AUTHZ_EP_URL = "authorization_endpoint"
+  OPDISCOVERY_TOKEN_EP_URL = "token_endpoint"
+  OPDISCOVERY_INTROSPECTION_EP_URL = "introspection_endpoint"
+  OPDISCOVERY_JWKS_EP_URL = "jwks_uri"
+  OPDISCOVERY_USERINFO_EP_URL = "userinfo_endpoint"
+  OPDISCOVERY_ISSUER = "issuer"
+  OPDISCOVERY_TOKEN_EP_AUTH = "token_endpoint_auth_methods_supported"
+  OPDISCOVERY_SCOPES = "scopes_supported"
+  OPDISCOVERY_IDTOKEN_SIGN_ALG = "id_token_signing_alg_values_supported"
+  CFG_KEY_TOKEN_REUSE = "tokenReuse"
+  contextPath = "/oidcclient"
+  COMMA = ","
+  BLANK = ""
+  KEY_CONFIGURATION_ADMIN = "configurationAdmin"
+  configAdminRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@2f845dd2
+    referenceName = "configurationAdmin"
+    tuple = class java.util.concurrent.atomic.AtomicReference@775eae2
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@13b9ae2
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@48761910
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@e68c36d
+      strings[0] = "TraceComponent[com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,[kernelUtils],com.ibm.ws.kernel.service.utils.resources.ServiceMessages,null]"
+  KEY_KEYSTORE_SERVICE = "keyStoreService"
+  keyStoreServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@726d72f4
+    referenceName = "keyStoreService"
+    tuple = class java.util.concurrent.atomic.AtomicReference@6c3cb881
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@13b9ae2
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@f21eb9b
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@e68c36d
+  KEY_LOCATION_ADMIN = "locationAdmin"
+  locationAdminRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@5d9f976
+    referenceName = "locationAdmin"
+    tuple = class java.util.concurrent.atomic.AtomicReference@124407e3
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@13b9ae2
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@634bf2a4
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@e68c36d
+  id = "c6022b66-b21e-46d3-a96a-1ec9475249d1"
+  grantType = "authorization_code"
+  responseType = null
+  scope = "openid profile"
+  clientId = "c6022b66-b21e-46d3-a96a-1ec9475249d1"
+  clientSecret = "FKf-@x4Jpg?S9[8n3gpJgR9bi0GlX@uC"
+  redirectToRPHostAndPort = null
+  userIdentifier = null
+  groupIdentifier = "groupIds"
+  realmIdentifier = "realmName"
+  realmName = null
+  uniqueUserIdentifier = "uniqueSecurityName"
+  tokenEndpointAuthMethod = "post"
+  userIdentityToCreateSubject = "sub"
+  mapIdentityToRegistryUser = false
+  oidcclientRequestParameterSupported = true
+  validateAccessTokenLocally = true
+  disableLtpaCookie = false
+  sharedKey = null
+  trustAliasName = null
+  httpsRequired = true
+  clientSideRedirect = true
+  nonceEnabled = false
+  sslRef = null
+  sslConfigurationName = null
+  signatureAlgorithm = "RS256"
+  clockSkewInSeconds = 300
+  authenticationTimeLimitInSeconds = 420
+  discoveryEndpointUrl = "https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration"
+  authorizationEndpointUrl = null
+  tokenEndpointUrl = null
+  userInfoEndpointUrl = null
+  userInfoEndpointEnabled = false
+  validationEndpointUrl = null
+  initialStateCacheCapacity = 0
+  issuerIdentifier = null
+  trustStoreRef = null
+  hostNameVerificationEnabled = false
+  includeIdTokenInSubject = false
+  includeCustomCacheKeyInSubject = false
+  authenticationContextClassReferenceValue = null
+  authFilterRef = null
+  authFilterId = null
+  jsonWebKey = null
+  jwkEndpointUrl = null
+  jwkClientId = null
+  jwkClientSecret = null
+  jwtRef = null
+  jwtClaims = null
+  jwkset = null
+  prompt = null
+  createSession = false
+  inboundPropagation = null
+  validationMethod = "introspect"
+  headerName = null
+  disableIssChecking = false
+  audiences = null
+  allAudiences = false
+  resources = null
+  useAccessTokenAsIdToken = false
+  forwardLoginParameter = null
+  oidcClientCookieName = null
+  authnSessionDisabled = false
+  goodConfig = true
+  reAuthnOnAccessTokenExpire = false
+  reAuthnCushionMilliseconds = 0
+  redirectJunctionPath = null
+  accessTokenInLtpaCookie = false
+  discoveryjson = null
+  discoveryDocumentHash = null
+  discoveryPollingRate = 300000
+  nextDiscoveryTime = 1588372271941
+  discovery = false
+  authzRequestParamMap = null
+  tokenRequestParamMap = null
+  userinfoRequestParamMap = null
+  jwkRequestParamMap = null
+  configUtils = class com.ibm.ws.security.common.config.CommonConfigUtils@2639ca11
+    tc = class com.ibm.websphere.ras.TraceComponent@3f880bf4
+      strings[0] = "TraceComponent[com.ibm.ws.security.common.config.CommonConfigUtils,class com.ibm.ws.security.common.config.CommonConfigUtils,[SecurityCommon],com.ibm.ws.security.common.internal.resources.SSOCommonMessages,null]"
+    serialVersionUID = 3269256984213766425
+  oidcConfigUtils = class com.ibm.ws.security.openidconnect.common.ConfigUtils@ab12907
+    tc = class com.ibm.websphere.ras.TraceComponent@14ddbbb1
+      strings[0] = "TraceComponent[com.ibm.ws.security.openidconnect.common.ConfigUtils,class com.ibm.ws.security.openidconnect.common.ConfigUtils,[OpenIdConnect],com.ibm.ws.security.openidconnect.common.internal.resources.OidcCommonMessages,null]"
+    configAdminRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@2f845dd2
+    commonConfigUtils = class com.ibm.ws.security.common.config.CommonConfigUtils@1fdf794b
+      tc = class com.ibm.websphere.ras.TraceComponent@3f880bf4
+      serialVersionUID = 3269256984213766425
+    CFG_KEY_SCOPE_TO_CLAIM_MAP = "scopeToClaimMap"
+    CFG_KEY_CLAIM_TO_UR_MAP = "claimToUserRegistryMap"
+    CFG_KEY_DISCOVERY = "discovery"
+    CFG_VALUES_DELIMITER = ","
+    defaultDiscoveryProperties = class java.util.HashMap@1e16c22a
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[16]
+      entrySet = null
+      size = 10
+      modCount = 10
+      threshold = 12
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    defaultDiscoveryClaimsParmSupp = false
+    defaultDiscoveryRequestParmSupp = false
+    defaultDiscoveryRequestUriParmSupp = false
+    defaultDiscoveryRequireRequestUriRegistrationSupp = false
+    KEY_OIDC_ISSUER_ID = "issuerIdentifier"
+    KEY_OIDC_AUTHORIZATION_EP = "authorizationEndpoint"
+    KEY_OIDC_TOKEN_EP = "tokenEndpoint"
+    KEY_OIDC_JWKS_URI = "jwksURI"
+    KEY_OIDC_RESPONSE_TYPES_SUPP = "responseTypesSupported"
+    KEY_OIDC_SUB_TYPES_SUPP = "subjectTypesSupported"
+    KEY_OIDC_ID_TOKEN_SIGNING_ALG_VAL_SUPP = "idTokenSigningAlgValuesSupported"
+    KEY_OIDC_USERINFO_EP = "userinfoEndpoint"
+    KEY_OIDC_REGISTRATION_EP = "registrationEndpoint"
+    KEY_OIDC_SCOPES_SUPP = "scopesSupported"
+    KEY_OIDC_CLAIMS_SUPP = "claimsSupported"
+    KEY_OIDC_RESP_MODES_SUPP = "responseModesSupported"
+    KEY_OIDC_GRANT_TYPES_SUPP = "grantTypesSupported"
+    KEY_OIDC_TOKEN_EP_AUTH_METHODS_SUPP = "tokenEndpointAuthMethodsSupported"
+    KEY_OIDC_DISPLAY_VAL_SUPP = "displayValuesSupported"
+    KEY_OIDC_CLAIM_TYPES_SUPP = "claimTypesSupported"
+    KEY_OIDC_CLAIM_PARAM_SUPP = "claimsParameterSupported"
+    KEY_OIDC_REQ_PARAM_SUPP = "requestParameterSupported"
+    KEY_OIDC_REQ_URI_PARAM_SUPP = "requestUriParameterSupported"
+    KEY_OIDC_REQUIRE_REQ_URI_REGISTRATION = "requireRequestUriRegistration"
+    KEY_OIDC_CHECK_SESSION_IFRAME = "checkSessionIframe"
+    KEY_OIDC_END_SESSION_EP = "endSessionEndpoint"
+    KEY_OIDC_INTROSPECTION_EP = "introspectionEndpoint"
+    KEY_OIDC_COVERAGE_MAP_EP = "coverageMapEndpoint"
+    KEY_OIDC_PROXY_EP = "proxyEndpoint"
+    KEY_OIDC_BACKING_IDP_URI_PREFIX = "backingIdpUriPrefix"
+    specScopesToClaims = class java.util.HashMap@54ce8ad7
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[16]
+      entrySet = null
+      size = 4
+      modCount = 4
+      threshold = 12
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    specDefinedScopes = class java.util.HashSet@4c214345
+      serialVersionUID = -5024744406713321676
+      map = class java.util.HashMap@7e73f5e4
+      PRESENT = class java.lang.Object@7702a21b
+      MAX_ARRAY_SIZE = 2147483639
+    defaultClaimsToVMMProperties = class java.util.HashMap@64ab82d9
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[16]
+      entrySet = null
+      size = 6
+      modCount = 6
+      threshold = 12
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    supportedSpecDefinedClaims = class java.util.HashSet@4c841bf4
+      serialVersionUID = -5024744406713321676
+      map = class java.util.HashMap@1a8e0d7a
+      PRESENT = class java.lang.Object@7702a21b
+      MAX_ARRAY_SIZE = 2147483639
+    serialVersionUID = 6000988661044177332
+  discoveryUtils = class com.ibm.ws.security.common.config.DiscoveryConfigUtils@5fb52651
+    tc = class com.ibm.websphere.ras.TraceComponent@6c0432da
+      strings[0] = "TraceComponent[com.ibm.ws.security.common.config.DiscoveryConfigUtils,class com.ibm.ws.security.common.config.DiscoveryConfigUtils,[SecurityCommon],com.ibm.ws.security.common.internal.resources.SSOCommonMessages,null]"
+    discoveryjson = null
+    tokenEndpointAuthMethod = null
+    scope = null
+    signatureAlgorithm = null
+    id = null
+    discoveryURL = null
+    configUtils = class com.ibm.ws.security.common.config.CommonConfigUtils@70d27176
+      tc = class com.ibm.websphere.ras.TraceComponent@3f880bf4
+      serialVersionUID = 3269256984213766425
+    discoveryDocumentHash = null
+    discoveryPollingRate = 0
+    OPDISCOVERY_AUTHZ_EP_URL = "authorization_endpoint"
+    OPDISCOVERY_TOKEN_EP_URL = "token_endpoint"
+    OPDISCOVERY_INTROSPECTION_EP_URL = "introspection_endpoint"
+    OPDISCOVERY_JWKS_EP_URL = "jwks_uri"
+    OPDISCOVERY_USERINFO_EP_URL = "userinfo_endpoint"
+    OPDISCOVERY_ISSUER = "issuer"
+    OPDISCOVERY_TOKEN_EP_AUTH = "token_endpoint_auth_methods_supported"
+    OPDISCOVERY_SCOPES = "scopes_supported"
+    OPDISCOVERY_IDTOKEN_SIGN_ALG = "id_token_signing_alg_values_supported"
+    CFG_KEY_SCOPE = "scope"
+    CFG_KEY_TOKEN_ENDPOINT_AUTH_METHOD = "tokenEndpointAuthMethod"
+    CFG_KEY_SIGNATURE_ALGORITHM = "signatureAlgorithm"
+    KEY_authorizationEndpoint = "authorizationEndpoint"
+    KEY_tokenEndpoint = "tokenEndpoint"
+    KEY_USERINFO_ENDPOINT = "userInfoEndpoint"
+    KEY_jwksUri = "jwksUri"
+    KEY_ISSUER = "issuer"
+    KEY_DISCOVERY_ENDPOINT = "discoveryEndpoint"
+    serialVersionUID = -5198216331146173067
+  useSystemPropertiesForHttpClientConnections = false
+  tokenReuse = false
+  firstRandom = "mPuXrfp5gvn6NM1h1ZypEnWaIWT1pAAh"
+  serialVersionUID = -6718621948813632797
+
+Dump of objectArray[0]
+Object type = org.apache.http.impl.client.InternalHttpClient
+  log = class org.apache.commons.logging.impl.Jdk14Logger@19914f5b
+    logger = class com.ibm.ws.logging.internal.WsLogger@4e6d44bb
+      tc = class com.ibm.websphere.ras.TraceComponent@586980b3
+      ivCachedResourceBundleName = null
+      ivCachedResourceBundle = null
+      ivComponent = null
+      ivOrganization = null
+      ivProduct = null
+      ivMinimumLocalizationLevelIntValue = 625
+      ivTC = class com.ibm.websphere.ras.TraceComponent@1f244d6d
+      loggerRegistrationComponent = class java.lang.ThreadLocal@770dbf7c
+      emptyHandlers = class java.util.logging.Handler[0]
+      offValue = 2147483647
+      SYSTEM_LOGGER_RB_NAME = "sun.util.logging.resources.logging"
+      SYSTEM_BUNDLE = class java.util.logging.Logger$LoggerBundle@1fab2100
+      NO_RESOURCE_BUNDLE = class java.util.logging.Logger$LoggerBundle@e938a47
+      manager = class com.ibm.ws.kernel.boot.logging.WsLogManager@147f22b6
+      name = "org.apache.http.impl.client.InternalHttpClient"
+      handlers = class java.util.concurrent.CopyOnWriteArrayList@3e36cc1d
+      loggerBundle = class java.util.logging.Logger$LoggerBundle@e938a47
+      useParentHandlers = true
+      filter = null
+      anonymous = false
+      catalog = null
+      catalogName = null
+      catalogLocale = null
+      treeLock = class java.lang.Object@785359fa
+      parent = class java.util.logging.Logger@6a002505
+      kids = null
+      levelObject = class java.util.logging.Level@787c061
+      levelValue = 800
+      callersClassLoaderRef = null
+      isSystemLogger = false
+      GLOBAL_LOGGER_NAME = "global"
+      global = class java.util.logging.Logger@fd9b2a8
+      $assertionsDisabled = true
+  execChain = class org.apache.http.impl.execchain.RedirectExec@183272c9
+    log = class org.apache.commons.logging.impl.Jdk14Logger@3348313d
+      logger = class com.ibm.ws.logging.internal.WsLogger@48a8fe08
+    requestExecutor = class org.apache.http.impl.execchain.RetryExec@602297ad
+      log = class org.apache.commons.logging.impl.Jdk14Logger@4e3b3822
+      requestExecutor = class org.apache.http.impl.execchain.ProtocolExec@58ccd369
+      retryHandler = class org.apache.http.impl.client.DefaultHttpRequestRetryHandler@2611f886
+    redirectStrategy = class org.apache.http.impl.client.DefaultRedirectStrategy@44ce5f8e
+      log = class org.apache.commons.logging.impl.Jdk14Logger@5ba9a6bd
+      REDIRECT_LOCATIONS = "http.protocol.redirect-locations"
+      INSTANCE = class org.apache.http.impl.client.DefaultRedirectStrategy@44ce5f8e
+      redirectMethods = class java.lang.String[2]
+    routePlanner = class org.apache.http.impl.conn.DefaultRoutePlanner@5df590b2
+  connManager = class org.apache.http.impl.conn.PoolingHttpClientConnectionManager@19f85eea
+    log = class org.apache.commons.logging.impl.Jdk14Logger@19e88dee
+      logger = class com.ibm.ws.logging.internal.WsLogger@2595012b
+    configData = class org.apache.http.impl.conn.PoolingHttpClientConnectionManager$ConfigData@4fd4c7e4
+      socketConfigMap = class java.util.concurrent.ConcurrentHashMap@5fbd3869
+      connectionConfigMap = class java.util.concurrent.ConcurrentHashMap@6154ef6c
+      defaultSocketConfig = null
+      defaultConnectionConfig = null
+    pool = class org.apache.http.impl.conn.CPool@3108d581
+      COUNTER = class java.util.concurrent.atomic.AtomicLong@c4d5ae5
+      log = class org.apache.commons.logging.impl.Jdk14Logger@6e42619d
+      timeToLive = -1
+      timeUnit = class java.util.concurrent.TimeUnit$3@3b4c0b65
+      lock = class java.util.concurrent.locks.ReentrantLock@13e0395a
+      condition = class java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6ed3ec32
+      connFactory = class org.apache.http.impl.conn.PoolingHttpClientConnectionManager$InternalConnectionFactory@359fc5ae
+      routeToPool = class java.util.HashMap@266b9b4c
+      leased = class java.util.HashSet@34d35c32
+      available = class java.util.LinkedList@451084e6
+      pending = class java.util.LinkedList@ee99b5f
+      maxPerRoute = class java.util.HashMap@7422c035
+      isShutDown = false
+      defaultMaxPerRoute = 2
+      maxTotal = 20
+      validateAfterInactivity = 2000
+    connectionOperator = class org.apache.http.impl.conn.DefaultHttpClientConnectionOperator@46e3414b
+      SOCKET_FACTORY_REGISTRY = "http.socket-factory-registry"
+      log = class org.apache.commons.logging.impl.Jdk14Logger@42b19212
+      socketFactoryRegistry = class org.apache.http.config.Registry@4fb668cc
+      schemePortResolver = class org.apache.http.impl.conn.DefaultSchemePortResolver@67ad57e2
+      dnsResolver = class org.apache.http.impl.conn.SystemDefaultDnsResolver@42a7b448
+    isShutDown = class java.util.concurrent.atomic.AtomicBoolean@1bb92384
+      serialVersionUID = 4654671469794556979
+      unsafe = class sun.misc.Unsafe@13b9ae2
+      valueOffset = 12
+      value = 0
+  routePlanner = class org.apache.http.impl.conn.DefaultRoutePlanner@5df590b2
+    schemePortResolver = class org.apache.http.impl.conn.DefaultSchemePortResolver@67ad57e2
+      INSTANCE = class org.apache.http.impl.conn.DefaultSchemePortResolver@67ad57e2
+  cookieSpecRegistry = class org.apache.http.config.Registry@4e0df7c0
+    map = class java.util.concurrent.ConcurrentHashMap@78fd6cc8
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 4
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[32]
+      nextTable = null
+      baseCount = 7
+      sizeCtl = 24
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@13b9ae2
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+  authSchemeRegistry = class org.apache.http.config.Registry@45a270f2
+    map = class java.util.concurrent.ConcurrentHashMap@66f09a6
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 4
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[16]
+      nextTable = null
+      baseCount = 5
+      sizeCtl = 12
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@13b9ae2
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+  cookieStore = class org.apache.http.impl.client.BasicCookieStore@1e7669a2
+    serialVersionUID = -7581093305228232025
+    cookies = class java.util.TreeSet@59ddbb14
+      m = class java.util.TreeMap@1b48b85a
+      PRESENT = class java.lang.Object@59b9fb0f
+      serialVersionUID = -2479143000061671589
+      MAX_ARRAY_SIZE = 2147483639
+    lock = class java.util.concurrent.locks.ReentrantReadWriteLock@baa06a8
+      serialVersionUID = -6992448646407690164
+      readerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock@3adb28a0
+      writerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock@65fc243a
+      sync = class java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@624df8f0
+      UNSAFE = class sun.misc.Unsafe@13b9ae2
+      TID_OFFSET = 40
+  credentialsProvider = class org.apache.http.impl.client.BasicCredentialsProvider@6f771ade
+    credMap = class java.util.concurrent.ConcurrentHashMap@8589685
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 4
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = null
+      nextTable = null
+      baseCount = 0
+      sizeCtl = 0
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@13b9ae2
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+  defaultConfig = class org.apache.http.client.config.RequestConfig@4e655307
+    DEFAULT = class org.apache.http.client.config.RequestConfig@4e655307
+    expectContinueEnabled = false
+    proxy = null
+    localAddress = null
+    staleConnectionCheckEnabled = false
+    cookieSpec = null
+    redirectsEnabled = true
+    relativeRedirectsAllowed = true
+    circularRedirectsAllowed = false
+    maxRedirects = 50
+    authenticationEnabled = true
+    targetPreferredAuthSchemes = null
+    proxyPreferredAuthSchemes = null
+    connectionRequestTimeout = -1
+    connectTimeout = -1
+    socketTimeout = -1
+    contentCompressionEnabled = true
+    normalizeUri = true
+  closeables = class java.util.ArrayList@18968fd9
+    serialVersionUID = 8683452581122892189
+    DEFAULT_CAPACITY = 10
+    EMPTY_ELEMENTDATA = class java.lang.Object[0]
+    DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+    elementData = class java.lang.Object[1]
+      Object[0] = class org.apache.http.impl.client.HttpClientBuilder$2@6da7a620
+    size = 1
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 1
+    MAX_ARRAY_SIZE = 2147483639
+  log = class org.apache.commons.logging.impl.Jdk14Logger@19914f5b
+
+Dump of objectArray[1]
+Object type = java.lang.String
+  String value = "https://login.microsoftonline.com/49793faf-eb3f-4d99-a0cf-aef7cce79dc1/v2.0/.well-known/openid-configuration"
+

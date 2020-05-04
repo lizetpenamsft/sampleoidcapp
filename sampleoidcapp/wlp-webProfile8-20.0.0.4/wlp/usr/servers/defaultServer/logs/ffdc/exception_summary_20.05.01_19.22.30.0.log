@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0     14     5/1/20 19:22:30:637 BRT     5/1/20 19:24:34:001 BRT com.ibm.wsspi.channelfw.exception.ChannelException com.ibm.ws.channel.ssl.internal.SSLConnectionLink 238
+                                                                            - /c/Users/ernmarti/Downloads/wlp-webProfile8-20.0.0.4/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_20.05.01_19.22.30.0.log
+------+------+---------------------------+---------------------------+---------------------------
